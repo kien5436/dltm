@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="one.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body class="grid grid-rows-[min-content_1fr]">
+  <!-- above the fold spacer -->
+  <div class="h-screen col-span-full row-[1_/_span_2]"></div>
+
+  <header class="sticky z-40 top-0 col-start-1 row-start-1">
+    <nav class="flex justify-between bg-primary text-white w-screen">
+      <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+        <a class="text-3xl font-bold font-heading flex gap-1" href="#">
+          <img class="h-9" src="https://picsum.photos/60" alt="logo">
+          Logo Here.
+        </a>
+
+        <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+          <li><a class="hover:text-gray-200" href="#">Home</a></li>
+          <li><a class="hover:text-gray-200" href="#">Catagory</a></li>
+          <li><a class="hover:text-gray-200" href="#">Collections</a></li>
+          <li><a class="hover:text-gray-200" href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="hidden xl:flex space-x-5 items-center">
+          <a class="flex gap-1 items-center hover:text-gray-200" href="#">
+            phamtrungkien
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </a>
+
+        </div>
+      </div>
+      <!-- Responsive navbar -->
+      <button type="button" class="navbar-burger self-center mr-12 xl:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <div
+        class="offcanvas-menu hidden top-0 left-0 z-40 h-screen w-screen before:block before:w-full before:h-full before:bg-gray-300/30">
+        <div class="absolute top-0 left-0 w-2/3 h-full bg-primary transition-transform -translate-x-full">
+          <ul class="flex flex-col px-4 mx-auto font-semibold font-heading">
+            <li>
+              <a class="text-3xl font-bold font-heading flex gap-1 py-5" href="/">
+                <img class="h-9" src="https://picsum.photos/60" alt="logo">
+                Logo Here.
+              </a>
+            </li>
+            <li><a class="block py-2" href="#">Home</a></li>
+            <li><a class="block py-2" href="#">Catagory</a></li>
+            <li><a class="block py-2" href="#">Collections</a></li>
+            <li><a class="block py-2" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero -->
+  <section
+    class="relative h-screen flex flex-col items-center justify-center text-center text-white col-start-1 row-start-2">
+    <div
+      class="absolute top-0 left-0 w-full h-full overflow-hidden after:absolute after:w-full after:h-full after:top-0 after:left-0 after:bg-black/40 after:z-10">
+      <img class="min-w-full min-h-full object-cover" src="https://picsum.photos/1366/768">
+    </div>
+    <div class="space-y-2 z-10">
+      <h1 class="font-light text-6xl">Lorem, ipsum dolor.</h1>
+      <h3 class="font-light text-3xl">Lorem ipsum dolor sit amet.</h3>
+    </div>
+  </section>
+  <!-- end hero -->
+
+  <!-- search form -->
+  <section class="py-8 px-5 xl:px-12">
+    <div class="flex justify-center">
+      <a href="#" aria-current="false"
+        class="flex items-center gap-x-2 justify-center font-medium rounded-l px-5 py-2 border bg-white text-gray-800 border-gray-200 hover:bg-gray-100">
+        Recent
+        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z">
+          </path>
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z">
+          </path>
+        </svg>
+      </a>
+      <a href="#" aria-current="page"
+        class="flex items-center gap-x-2 justify-center font-medium px-5 py-2 border-t border-b bg-primary text-white">
+        Popular
+        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z">
+          </path>
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z">
+          </path>
+        </svg>
+      </a>
+      <a href="#" aria-current="false"
+        class="flex items-center gap-x-2 justify-center font-medium rounded-r px-5 py-2 border bg-white text-gray-800 border-gray-200 hover:bg-gray-100">
+        Trending
+        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z">
+          </path>
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="flex items-center justify-center mt-8">
+      <div class="mx-auto w-full max-w-[550px]">
+        <form>
+          <div class="-mx-3 flex flex-wrap">
+            <div class="w-full px-3 sm:w-1/2">
+              <div class="mb-5">
+                <label for="fName" class="mb-3 block  font-medium">
+                  First Name
+                </label>
+                <input type="text" name="fName" id="fName" placeholder="First Name"
+                  class="w-full rounded border py-1.5 px-5  font-medium outline-none focus:border-primary focus:shadow-md" />
+              </div>
+            </div>
+            <div class="w-full px-3 sm:w-1/2">
+              <div class="mb-5">
+                <label for="fName" class="mb-3 block  font-medium">
+                  First Name
+                </label>
+                <input type="text" name="fName" id="fName" placeholder="First Name"
+                  class="w-full rounded border py-1.5 px-5  font-medium outline-none focus:border-primary focus:shadow-md" />
+              </div>
+            </div>
+          </div>
+          <div class="mb-5">
+            <label for="fName" class="mb-3 block  font-medium">
+              First Name
+            </label>
+            <input type="text" name="fName" id="fName" placeholder="First Name"
+              class="w-full rounded border py-1.5 px-5  font-medium outline-none focus:border-primary focus:shadow-md" />
+          </div>
+
+          <div class="mb-5">
+            <label class="mb-3 block  font-medium text-[#07074D]">
+              Are you coming to the event?
+            </label>
+            <div class="flex items-center space-x-6">
+              <label class="inline-flex items-center gap-2" for="redCheckBox">
+                <input id="redCheckBox" type="checkbox" class="w-4 h-4 accent-primary" checked>
+                checkbox
+              </label>
+              <label for="radioButton2" class="inline-flex items-center gap-2 pl-3  font-medium">
+                <input type="radio" name="radio1" id="radioButton2" class="h-4 w-4 accent-primary" checked />
+                radio
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <button
+              class="hover:shadow-form rounded bg-primary py-2 px-5 text-center  font-semibold text-white outline-none">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- end search form -->
+
+  <!-- featured tours -->
+  <section class="py-8 px-5 xl:px-12">
+    <h3 class="text-2xl font-bold mb-4">Featured tours</h3>
+    <div class="columns-1 sm:columns-2 lg:columns-4 gap-5">
+      <div class="w-full mb-5 lg:mb-0 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="https://picsum.photos/300/200" alt="Sunset in the mountains">
+        <div class="px-5 py-4 flex flex-col">
+          <p class="font-bold text-xl">The Coldest Sunset</p>
+        </div>
+        <div class="px-5 pb-4 flex justify-between">
+          <p class="font-bold">The Coldest Sunset</p>
+          <p class="text-gray-700"> 1000đ </p>
+        </div>
+        <div class="px-5 pb-4 flex justify-between">
+          <p class="font-bold">The Coldest Sunset</p>
+          <p class="text-gray-700"> 1000đ </p>
+        </div>
+      </div>
+      <div class="w-full mb-5 lg:mb-0 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="https://picsum.photos/300/200" alt="Sunset in the mountains">
+        <div class="px-5 py-4 flex flex-col">
+          <p class="font-bold text-xl">The Coldest Sunset</p>
+        </div>
+        <div class="px-5 pb-4 flex justify-between">
+          <p class="font-bold">The Coldest Sunset</p>
+          <p class="text-gray-700"> 1000đ </p>
+        </div>
+        <div class="px-5 pb-4 flex justify-between">
+          <p class="font-bold">The Coldest Sunset</p>
+          <p class="text-gray-700"> 1000đ </p>
+        </div>
+      </div>
+      <div class="w-full mb-5 lg:mb-0 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="https://picsum.photos/300/200" alt="Sunset in the mountains">
+        <div class="px-5 py-4 flex flex-col">
+          <p class="font-bold text-xl">The Coldest Sunset</p>
+        </div>
+        <div class="px-5 pb-4 flex justify-between">
+          <p class="font-bold">The Coldest Sunset</p>
+          <p class="text-gray-700"> 1000đ </p>
+        </div>
+        <div class="px-5 pb-4 flex justify-between">
+          <p class="font-bold">The Coldest Sunset</p>
+          <p class="text-gray-700"> 1000đ </p>
+        </div>
+      </div>
+      <div class="w-full mb-5 lg:mb-0 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="https://picsum.photos/300/200" alt="Sunset in the mountains">
+        <div class="px-5 py-4 flex flex-col">
+          <p class="font-bold text-xl">The Coldest Sunset</p>
+        </div>
+        <div class="px-5 pb-4 flex justify-between">
+          <p class="font-bold">The Coldest Sunset</p>
+          <p class="text-gray-700"> 1000đ </p>
+        </div>
+        <div class="px-5 pb-4 flex justify-between">
+          <p class="font-bold">The Coldest Sunset</p>
+          <p class="text-gray-700"> 1000đ </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end featured tours -->
+
+  <!-- featured places -->
+  <section class="py-8 px-5 xl:px-12">
+    <h3 class="text-2xl font-bold mb-4">Featured places</h3>
+    <div class="columns-1 sm:columns-2 lg:columns-4 gap-5">
+      <div class="w-full mb-5 lg:mb-0 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="https://picsum.photos/300/200" alt="Sunset in the mountains">
+        <div class="px-5 py-4 flex flex-col">
+          <p class="font-bold text-xl">The Coldest Sunset</p>
+        </div>
+        <div class="px-5 pb-4 flex justify-between">
+          <p class="font-bold">The Coldest Sunset</p>
+          <p class="text-gray-700"> 1000đ </p>
+        </div>
+        <div class="px-5 pb-4 flex justify-between">
+          <p class="font-bold">The Coldest Sunset</p>
+          <p class="text-gray-700"> 1000đ </p>
+        </div>
+      </div>
+      <div class="w-full mb-5 lg:mb-0 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="https://picsum.photos/300/200" alt="Sunset in the mountains">
+        <div class="px-5 py-4 flex flex-col">
+          <p class="font-bold text-xl">The Coldest Sunset</p>
+        </div>
+        <div class="px-5 pb-4 flex justify-between">
+          <p class="font-bold">The Coldest Sunset</p>
+          <p class="text-gray-700"> 1000đ </p>
+        </div>
+        <div class="px-5 pb-4 flex justify-between">
+          <p class="font-bold">The Coldest Sunset</p>
+          <p class="text-gray-700"> 1000đ </p>
+        </div>
+      </div>
+      <div class="w-full mb-5 lg:mb-0 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="https://picsum.photos/300/200" alt="Sunset in the mountains">
+        <div class="px-5 py-4 flex flex-col">
+          <p class="font-bold text-xl">The Coldest Sunset</p>
+        </div>
+        <div class="px-5 pb-4 flex justify-between">
+          <p class="font-bold">The Coldest Sunset</p>
+          <p class="text-gray-700"> 1000đ </p>
+        </div>
+        <div class="px-5 pb-4 flex justify-between">
+          <p class="font-bold">The Coldest Sunset</p>
+          <p class="text-gray-700"> 1000đ </p>
+        </div>
+      </div>
+      <div class="w-full mb-5 lg:mb-0 rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="https://picsum.photos/300/200" alt="Sunset in the mountains">
+        <div class="px-5 py-4 flex flex-col">
+          <p class="font-bold text-xl">The Coldest Sunset</p>
+        </div>
+        <div class="px-5 pb-4 flex justify-between">
+          <p class="font-bold">The Coldest Sunset</p>
+          <p class="text-gray-700"> 1000đ </p>
+        </div>
+        <div class="px-5 pb-4 flex justify-between">
+          <p class="font-bold">The Coldest Sunset</p>
+          <p class="text-gray-700"> 1000đ </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end featured places -->
+
+  <!-- news -->
+  <section class="py-8 px-5 xl:px-12">
+    <h3 class="text-2xl font-bold mb-4">News</h3>
+    <div class="columns-1 lg:columns-2 gap-5">
+      <div class="w-full mb-5 bg-white rounded shadow-lg overflow-hidden">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img class="h-48 w-full object-cover md:h-full md:w-48" src="https://picsum.photos/320/240">
+          </div>
+          <div class="p-8">
+            <div class="tracking-wide text-sm font-semibold">Company retreats</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible
+              accommodation for your team
+            </a>
+            <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in
+              some sunshine? We have a list of places to do just that.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full mb-5 bg-white rounded shadow-lg overflow-hidden">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img class="h-48 w-full object-cover md:h-full md:w-48" src="https://picsum.photos/320/240">
+          </div>
+          <div class="p-8">
+            <div class="tracking-wide text-sm font-semibold">Company retreats</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible
+              accommodation for your team
+            </a>
+            <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in
+              some sunshine? We have a list of places to do just that.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full mb-5 bg-white rounded shadow-lg overflow-hidden">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img class="h-48 w-full object-cover md:h-full md:w-48" src="https://picsum.photos/320/240">
+          </div>
+          <div class="p-8">
+            <div class="tracking-wide text-sm font-semibold">Company retreats</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible
+              accommodation for your team
+            </a>
+            <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in
+              some sunshine? We have a list of places to do just that.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full mb-5 bg-white rounded shadow-lg overflow-hidden">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <img class="h-48 w-full object-cover md:h-full md:w-48" src="https://picsum.photos/320/240">
+          </div>
+          <div class="p-8">
+            <div class="tracking-wide text-sm font-semibold">Company retreats</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible
+              accommodation for your team
+            </a>
+            <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in
+              some sunshine? We have a list of places to do just that.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end news -->
+
+  <footer class="bg-primary">
+    <div class="px-4 pt-16 pb-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div class="grid gap-10 row-gap-6 sm:grid-cols-2">
+        <div class="space-y-2 text-sm">
+          <p class=" font-bold tracking-wide text-gray-900">Contacts</p>
+          <div class="flex">
+            <p class="mr-1 text-gray-800">Phone:</p>
+            <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone"
+              class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">850-123-5021</a>
+          </div>
+          <div class="flex">
+            <p class="mr-1 text-gray-800">Email:</p>
+            <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email"
+              class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">info@lorem.mail</a>
+          </div>
+          <div class="flex">
+            <p class="mr-1 text-gray-800">Address:</p>
+            <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Our address"
+              title="Our address"
+              class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+              312 Lovely Street, NY
+            </a>
+          </div>
+        </div>
+        <div>
+          <span class=" font-bold tracking-wide text-gray-900">Social</span>
+          <div class="flex items-center mt-1 space-x-3">
+            <a href="/">
+              <img src="https://picsum.photos/50" alt="">
+            </a>
+            <a href="/">
+              <img src="https://picsum.photos/50" alt="">
+            </a>
+            <a href="/">
+              <img src="https://picsum.photos/50" alt="">
+            </a>
+          </div>
+          <p class="mt-4 text-sm">
+            Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('load', () => {
+      // handle offcanvas menu
+      const offcanvasMenu = document.querySelector('.offcanvas-menu');
+
+      document.querySelector('.navbar-burger').addEventListener('click', () => {
+
+        offcanvasMenu.classList.add('fixed');
+        offcanvasMenu.classList.remove('hidden');
+
+        setTimeout(() => {
+
+          offcanvasMenu.firstElementChild.classList.remove('-translate-x-full');
+        }, 10);
+      });
+
+      offcanvasMenu.addEventListener('click', (e) => {
+
+        if (e.target !== offcanvasMenu) return;
+
+        offcanvasMenu.firstElementChild.classList.add('-translate-x-full');
+
+        setTimeout(() => {
+
+          offcanvasMenu.classList.remove('fixed');
+          offcanvasMenu.classList.add('hidden');
+        }, 150);
+      });
+    });
+  </script>
+</body>
+
+</html>
